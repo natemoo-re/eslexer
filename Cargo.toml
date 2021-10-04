@@ -1,0 +1,20 @@
+[package]
+name = "eslexer"
+version = "0.1.0"
+authors = ["Nate Moore <nate@natemoo.re>"]
+license = "MIT"
+repository = "https://github.com/natemoo-re/eslexer"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+logos = "0.12.0"
+js-sys = "*"
+serde_json = "*"
+

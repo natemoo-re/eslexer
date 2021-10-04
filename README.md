@@ -11,13 +11,19 @@ For example, you may naively write something like the following to check if a fi
 const matches = /foo/g.test(code);
 ```
 
-Unfortunately, this would return false positives for any of the following:
+Unfortunately, this would return false positives for any of the following...
 ```js
 // foo
 /* foo */
 const a = "foo";
 const b = 'foo';
 const c = `foo`;
+```
+
+When what you wanted to match was:
+```js
+const foo = "bar";
+const template = `not string foo but identifier ${foo}`;
 ```
 
 ## Why not a full parse?

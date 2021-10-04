@@ -44,4 +44,4 @@ Lexical scanning is exciting because it is:
 
 - Build in support for common use cases like renaming an identifier.
 - Build in construct-aware scanning, like variable or function declarations (in all the unique forms they can take). I _think_ tokens will be enough to handle these, but I could be wrong. This is treading pretty close to AST territory.
-- Some type of query syntax (similar to `document.querySelector()`). I don't want to use SQL.
+- Some type of query syntax (similar to `document.querySelector()`). I don't want to use SQL. Maybe something glob-like... `eslexer.query('import.meta.resolve(*)')`?

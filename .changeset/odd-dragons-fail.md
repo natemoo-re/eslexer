@@ -1,5 +1,5 @@
 ---
-"eslexer": patch
+'eslexer': patch
 ---
 
 Initial release

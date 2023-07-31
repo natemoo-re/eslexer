@@ -14,7 +14,7 @@ const STATE_TEMPLATE_LITERAL = 1;
 
 export interface Options {}
 export function tokenize(str: string, opts: Options = {}) {
-    const len = str.length;
+	const len = str.length;
 	// adjust length to ensure final token is always flushed
 	str += '\n';
 	let token: RegExpExecArray | null = null;

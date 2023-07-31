@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "moduleResolution": "Bundler",
+    "emitDeclarationOnly": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "node"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "eslexer",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natemoo-re/eslexer",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/natemoo-re/eslexer/issues"
+  },
+  "homepage": "https://github.com/natemoo-re/eslexer/tree/main/packages/core#readme",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "author": {
+    "name": "Nate Moore",
+    "email": "nate@natemoo.re",
+    "url": "https://twitter.com/n_moore"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@7.6.0",
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest",
+    "bench": "node --no-warnings --loader ts-node/esm bench/index.ts"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.22.7",
+    "acorn": "^8.10.0",
+    "js-tokens": "^8.0.1",
+    "tinybench": "^2.5.0",
+    "unbuild": "^1.1.1",
+    "vitest": "^0.33.0"
+  }
+}

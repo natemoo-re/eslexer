@@ -1,0 +1,30 @@
+{
+  "name": "root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stub": "pnpm -r run build --stub",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter @example/basic run start",
+    "format": "pnpm run format:code",
+    "format:code": "prettier -w . --cache",
+    "format:imports": "organize-imports-cli ./packages/*/tsconfig.json",
+    "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
+    "ci:publish": "changeset publish",
+    "ci:format": "pnpm run format:imports && pnpm run format:code"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/node": "18",
+    "merge2": "^1.4.1",
+    "organize-imports-cli": "^0.10.0",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.1.1"
+  },
+  "packageManager": "pnpm@7.6.0",
+  "volta": {
+    "node": "20.5.0"
+  }
+}

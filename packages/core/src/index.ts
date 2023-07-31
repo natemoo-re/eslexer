@@ -11,8 +11,10 @@ function isBalanced(balancer: Balancer) {
 }
 const STATE_DEFAULT = 0;
 const STATE_TEMPLATE_LITERAL = 1;
-export function tokenize(str: string, arr: string[] = []) {
-	const len = str.length;
+
+export interface Options {}
+export function tokenize(str: string, opts: Options = {}) {
+    const len = str.length;
 	// adjust length to ensure final token is always flushed
 	str += '\n';
 	let token: RegExpExecArray | null = null;

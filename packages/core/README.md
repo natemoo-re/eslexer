@@ -1,1 +1,3 @@
-# `@main/core`
+# **WIP**: `eslexer`
+
+A fast, tiny JavaScript tokenizer.

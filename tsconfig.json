@@ -4,7 +4,7 @@
     "target": "ESNext",
     "allowImportingTsExtensions": true,
     "declaration": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "NodeNext",
     "emitDeclarationOnly": true,
     "strict": true,
     "esModuleInterop": true,
